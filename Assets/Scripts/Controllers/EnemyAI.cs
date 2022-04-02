@@ -39,7 +39,6 @@ public class EnemyAI : MonoBehaviour
        
         dist = Vector3.Distance(player.transform.position, transform.position);
         
-
         if (playerInSightRange && !playerInAttackRange) // Если в радиусе обнаружения идет преследует игрока
         {
             
@@ -55,7 +54,6 @@ public class EnemyAI : MonoBehaviour
         {
             AttackPlayer();
         }
-       
     }
 
     private void Patroling()
@@ -74,7 +72,7 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceToWalkPoint.magnitude < 3f)
             walkPointSet = false;
-
+        
     }
     
     private void SearchWalkPoint()
@@ -96,7 +94,7 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttack)
         {
             Rigidbody rb = Instantiate(bullet, spawnPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 10f, ForceMode.Impulse);
+            rb.AddForce(player.transform.position * 10f, ForceMode.Impulse);
             alreadyAttack = true;
             Invoke(nameof(ResetAttack), timeBtwAttack);
         }
