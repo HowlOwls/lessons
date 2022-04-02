@@ -6,17 +6,23 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
    
-    [SerializeField] private float mouseSensitivity = 200f;
+    [SerializeField] private float mouseSensitivity = 300f;
     [SerializeField] private Transform player;
-    
     private float rotationX;
+    
     private void Start()
     {
+        
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
+    {
+        FpsCamera();
+    }
+
+    private void FpsCamera()
     {
         float mouseY = Input.GetAxis("Mouse Y") * Time.deltaTime * mouseSensitivity;
         float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * mouseSensitivity;

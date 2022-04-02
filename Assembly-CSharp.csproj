@@ -52,18 +52,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\WeaponAssets\Nokobot\Modern Guns - Handgun\_Demo Assets\SimpleShoot.cs" />
      <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
-     <Compile Include="Assets\Scripts\Weapons\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Weapons\PistolBullet.cs" />
      <Compile Include="Assets\Scripts\Weapons\ThrowingGrenade.cs" />
      <Compile Include="Assets\Scripts\Weapons\Pistol.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerCamera.cs" />
      <Compile Include="Assets\Scripts\Controllers\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\openDoor.cs" />
+     <Compile Include="Assets\Scripts\Weapons\WeaponLogic.cs" />
      <Compile Include="Assets\Scripts\Weapons\ChangeWeapon.cs" />
      <Compile Include="Assets\Scripts\Weapons\Grenade.cs" />
      <Compile Include="Assets\Scripts\Controllers\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Controllers\SceneController.cs" />
+     <Compile Include="Assets\Scripts\Weapons\LandMine.cs" />
+     <Compile Include="Assets\Scripts\Controllers\TestMineEnemy.cs" />
+     <Compile Include="Assets\Scripts\Weapons\TurretEnemy.cs" />
+     <Compile Include="Assets\Scripts\Weapons\bullet.cs" />
+     <Compile Include="Assets\Scripts\Weapons\PickUpPistolAmmo.cs" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
@@ -71,6 +78,7 @@
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S Add Scroll.shader" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\_Effects (Mobile)\MuzzleFlashes\!MuzzleFlash Differences.txt" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S Particle Add A8.shader" />
+     <None Include="Assets\WeaponAssets\Nokobot\Modern Guns - Handgun\README.txt" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S Smoke Scroll.shader" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S Particle Multiply A8.shader" />
      <None Include="Assets\ProBuilder Data\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
